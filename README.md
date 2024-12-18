@@ -1,16 +1,6 @@
-# socks5-hysteria2-for-serv00-ct8
-- 给 serv00 & ct8 机器一键安装 socks5 & hysteria2 & nezha-agent
-- CT8目前不推荐安装哪吒探针，安装探针容易封号。
-- serv00 & CT8 请勿安装PM2，安装PM2容易封号。
-- 在面板Additional servoces里打开Run your own applications为Enable
-- 在面板Port reservation里添加 Add port 开放UDP和TCP端口
-- Hysteria2用UDP端口，Socks5用TCP端口
-- 如果你只是为了保活登陆，serv00 ct8可以不安装任何东西，只需设置Github Actions保活
-- 如果安装部署过其它脚本，请你在安装此脚本之前用下面的清理服务器命令清除一次服务器后再安装！！！！！！
-## ⚠️ 问题反馈：天诚技术交流群
-## 👥 群组链接：https://t.me/cncomorg
-- Cloudflare优选IP 订阅器，每天定时发布更新。
-- openwrt系统 iStore系统 Ros系统 影视 音乐 机场等技术交流。
+# socks5-hysteria2-for-serv00
+- 给 serv00 机器一键安装 hysteria2
+forked from [gshtwy/socks5-hysteria2-for-Serv00-CT8](https://github.com/gshtwy/socks5-hysteria2-for-Serv00-CT8)
 ## 一键脚本
 - 推荐Socks5 hysteria2 nohup模式
 ```bash
