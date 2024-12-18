@@ -1,5 +1,5 @@
 # socks5-hysteria2-for-serv00
-- 给 serv00 机器一键安装 hysteria2
+- 给 serv00 机器一键安装 hysteria2  
 forked from [gshtwy/socks5-hysteria2-for-Serv00-CT8](https://github.com/gshtwy/socks5-hysteria2-for-Serv00-CT8)
 ## 一键脚本
 - 推荐Socks5 hysteria2 nohup模式
