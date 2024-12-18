@@ -14,19 +14,9 @@
 ## 一键脚本
 - 推荐Socks5 hysteria2 nohup模式
 ```bash
-bash <(curl -s https://raw.githubusercontent.com/gshtwy/socks5-for-serv00/main/install-socks5-hysteria.sh)
+bash <(curl -s https://raw.githubusercontent.com/lamess233/hysteria2-for-Serv00/main/install-socks5-hysteria.sh)
 ```
-- Socks5 pm2模式
 
-~`bash <(curl -s https://raw.githubusercontent.com/gshtwy/socks5-for-serv00/main/install-socks5-pm2.sh)`~
-
-
-卸载pm2
-```bash
-pm2 unstartup
-pm2 delete all
-npm uninstall -g pm2
-```
 ## 清理服务器
 
 ```bash
