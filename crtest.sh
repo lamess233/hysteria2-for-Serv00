@@ -5,13 +5,13 @@ USER=$(whoami)
 USER_LOWER="${USER,,}"
 USER_HOME="/home/${USER_LOWER}"
 HYSTERIA_WORKDIR="${USER_HOME}/.hysteria"
-HYSTERIA_CONFIG="${HYSTERIA_WORKDIR}/config.yaml"  # Hysteria 配置文件路径
+HYSTERIA_CONFIG="${HYSTERIA_WORKDIR}/config.yaml"
 HAPROXY_WORKDIR="${USER_HOME}/.haproxy"
-HYSTERIA_CONFIG="${HYSTERIA_CONFIG}/etc/haproxy.cfg"
+HAPROXY_CONFIG="${HAPROXY_WORKDIR}/etc/haproxy.cfg"
 # 定义 crontab 任务
 
 CRON_HYSTERIA="(nohup ${HYSTERIA_WORKDIR}/web server -c ${HYSTERIA_CONFIG} >/dev/null 2>&1 &)"
-CRON_HAPROXY="${HAPROXY_WORKDIR}/sbin/haproxy -f ${HYSTERIA_CONFIG}"
+CRON_HAPROXY="${HAPROXY_WORKDIR}/sbin/haproxy -f ${HAPROXY_CONFIG}"
 
 # 定义函数来添加 crontab 任务，减少重复代码
 add_cron_job() {
