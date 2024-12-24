@@ -22,7 +22,7 @@ add_cron_job() {
 
 if [ -f "$HYSTERIA_CONFIG" ]; then
   echo "添加 crontab 重启任务"
-  add_cron_job "@reboot pkill -kill -u $USER && ${CRON_HYSTERIA} && ${CRON_HAPROXY}"
+  add_cron_job "@reboot pkill -kill -u $USER && ${CRON_HYSTERIA}"
   add_cron_job "*/12 * * * * pgrep -x \"web\" > /dev/null || ${CRON_HYSTERIA}"
   add_cron_job "*/12 * * * * pgrep -x \"haproxy\" > /dev/null || ${CRON_HAPROXY}"
 fi
